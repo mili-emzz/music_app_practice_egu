@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <script src="https://kit.fontawesome.com/b9fc79f6cf.js" crossorigin="anonymous"></script>
     <script type="module" src="./main.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle">
-                    <span>back</span>
-                </div>
-                <div class="circle">
-                    <span>bars</span>
-                </div>
-            </nav>
 
-            <div id="song-details">
-                <img src="./media/default_img.jpg" alt="" id="song-img">
-                <h1 id="title"></h1>
-                <h3 id="artist"></h3>
+    <header class="nav-wrapper">
+        <nav class="navbar">
+            <ul class="nav_content">
+                <li class="nav_list">Todo</li>
+                <li class="nav_list">Playlists</li>
+                <li class="nav_list">Albums</li>
+                <li class="nav_list">Podcast</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="music-player">
+        <div class="artist-wrapper">
+            <div class="artist">
+                <img src="/media/image-removebg-preview (1) 1.png" alt="">
             </div>
-
-            <div class="audio">
-                <audio controls id="media" hidden>
-                    <!--<source id="audio" src="" type="audio/mpeg">-->
-                </audio>
-                <input type="range" value="0" id="progress">
-            </div>
-
-            <div class="song-controls">
-                <span id="lastest">last</span>
-                <span id="play" class="play">play</span>
-                <span id="forward">forward</span>
-            </div>
-
+            <h2 class="artist_name">Kali Uchi</h2>
+            <h3 class="artist_slogan">The best of...</h3>
         </div>
-    </div>
+
+        <section class="section-wrapper">
+        <div class="section-title">
+            <h2 class="title">We think about you</h2>
+        </div>
+
+        <div class="albums">
+            <div class="album_1">
+                <img src="/media/Rectangle 4.png" alt="Album">
+                <span>130 mood: TLR</span>
+            </div>
+            <div class="album_2">
+                <img src="/media/Rectangle 5.png" alt="Album 2">
+                <span>Friends Share Lovers</span>
+            </div>
+            <div class="album_3">
+                <img src="/media/Rectangle 6.png" alt="Album 3">
+                <span>Colaboraciones españas</span>
+            </div>
+        </div>
+        </section>
+
+        <div class="controls-wrapper">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div><i class="fa-solid fa-pause"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+            <div class="music-bar">
+                <input type="range" name="" id="">
+            </div>
+        </div>
+
+        <aside class="player">
+            <div class="search-bar">
+                <input type="search" name="" id="">
+            </div>
+            <div class="song-wrapper">
+                <img src="" alt="">
+            </div>
+        </aside>
+
+    </main>
 </body>
+
 </html>
