@@ -2,6 +2,7 @@ export default{ // apuntador y pilas
     AudioController(playlist){
         this._nextSong = playlist;
         this._actualSong = this._nextSong.pop();
+        this._controller = audioHTMLElement
     },
     _nextSong: [],
     _lastSong: [],

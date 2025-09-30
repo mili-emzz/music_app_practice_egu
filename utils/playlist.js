@@ -1,21 +1,20 @@
 import getRandom from "./utils.js"
 
-const playlist = [];
+export default function createPlaylist(songs, playlist){
 
-export default function createPlaylist(max){
+    let playlist = [];
 
-    console.log(playlist)
+    if(playlist !== null){
+        playlist = actual_playlist;
+    }
 
-    if(playlist.length !== max){
+    if(songs.length !== 0){
 
-        let song = getRandom(max);
+        let index_song = getRandom(songs.length);
 
-        if(playlist.includes(song)){
-            createPlaylist(max);
-        }else{
-            playlist.push(song);
-            createPlaylist(max)
-        }
+        playlist.push(songs[index_song]);
+        playlist.splice(song[index_song,1]); //Elimina de la lista apartir de tal posicion comienza a borra una vez. Jala y borra
+        return createPlaylist(songs, playlist);
     }
 
     return playlist;
